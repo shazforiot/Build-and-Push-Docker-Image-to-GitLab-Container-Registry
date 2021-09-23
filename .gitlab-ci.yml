@@ -49,7 +49,7 @@ push_job:
   tags:
     - docker
   script:
-    - echo " Pushing the image"
+    - docker push $CONTAINER_TEST_IMAGE
 
 logout_job:
   stage: Logout
